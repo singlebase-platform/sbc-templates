@@ -1,7 +1,7 @@
 {
   "type": "model",
   "version": "1.0.0",
-  "name": "simpletodo_model.json",
+  "name": "simpletodo_model",
   "title": "Simple TODO ",
   "description": "",
   "schemas": {

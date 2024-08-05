@@ -1,5 +1,5 @@
 {
-  "name": "microblog_model.json",
+  "name": "microblog_model",
   "version": "1.0.0",
   "schemas": {
     "jsonschema": {
