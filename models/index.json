@@ -1,0 +1,36 @@
+{
+  "templates":[
+    {
+      "type": "model",
+      "name": "microblog_model.json",
+      "title": "Micro Blog",
+      "description": "Blog",
+      "active": true,
+      "version": "1.0.0"
+    },
+    {
+      "type": "model",
+      "name": "simpletodo_model.json",
+      "description": "Simple Todo APP",
+      "title": "Simple Todo App",
+      "active": true,
+      "version": "1.0.0"
+    },
+    {
+      "type": "model",
+      "name": "contact_model.json",
+      "description": "This provides a Contact Form",
+      "title": "Contact",
+      "active": true,
+      "version": "1.0.0"
+    },
+    {
+      "type": "model",
+      "name": "waitlist_model.json",
+      "description": "Waitlist",
+      "title": "Waitlist",
+      "active": true,
+      "version": "1.0.0"
+    }
+  ]
+}
