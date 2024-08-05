@@ -1,8 +1,8 @@
 {
+  "id": "waitlist_model",
   "type": "model",
   "version": "1.0.0",
-  "name": "waitlist_model",
-  "title": "Wailist",
+  "name": "Wailist",
   "description": "",
   "schemas": {
     "jsonschema": {

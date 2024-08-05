@@ -1,6 +1,8 @@
 {
-  "name": "microblog_model",
+  "id": "microblog_model",
+  "name": "Micro Blog",
   "version": "1.0.0",
+  "type": "model",
   "schemas": {
     "jsonschema": {
       "$schema": "http://json-schema.org/draft-07/schema#",

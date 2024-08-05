@@ -16,10 +16,10 @@
     singleviewschema: {},
     editviewschema: {...},
   },
-  *config: {
-    jsonschema: {
-      edit_mode: full|partial|none 
-    }
+  properties: {
+    "allow_jsonschema_edit": true,
+    "allow_tableview_edit": true,
+    "allow_editview_edit": true,
   },
 
 }

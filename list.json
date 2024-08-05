@@ -1,38 +1,38 @@
 {
   "templates":[
     {
+      "id": "microblog_model",
       "type": "model",
       "loc": "models/microblog_model.json",
-      "name": "microblog_model",
-      "title": "Micro Blog",
+      "name": "Micro Blog",
       "description": "Blog",
       "active": true,
       "version": "1.0.0"
     },
     {
+      "id": "simpletodo_model",
       "type": "model",
       "loc": "models/simpletodo_model.json",
-      "name": "simpletodo_model",
       "description": "Simple Todo APP",
-      "title": "Simple Todo App",
+      "name": "Simple Todo App",
       "active": true,
       "version": "1.0.0"
     },
     {
+      "id": "contactmanager_model",
       "type": "model",
-      "loc": "models/contact_model.json",
-      "name": "contact_model",
-      "description": "This provides a Contact Form",
-      "title": "Contact",
+      "loc": "models/contactmanager_model.json",
+      "description": "To Manage Contacts",
+      "name": "Contact Manager",
       "active": true,
       "version": "1.0.0"
     },
     {
       "type": "model",
       "loc": "models/waitlist_model.json",
-      "name": "waitlist_model",
+      "id": "waitlist_model",
       "description": "Waitlist",
-      "title": "Waitlist",
+      "name": "Waitlist",
       "active": true,
       "version": "1.0.0"
     }
