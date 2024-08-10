@@ -119,7 +119,7 @@
         "alias": "Last Name"
       },
       {
-        "field": "emaiil",
+        "field": "email",
         "display": true,
         "type": "email",
         "options": {
