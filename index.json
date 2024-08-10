@@ -4,17 +4,17 @@
       "id": "micro-blog-post_1.0.0_model",
       "type": "model",
       "loc": "apps_templates/micro-blog-post_1.0.0_model.json",
-      "name": "Micro Blog Post Collection Model",
+      "name": "Micro Blog Post",
       "description": "Micro Blog Post Collection Model",
       "active": true,
       "version": "1.0.0"
     },
     {
-      "id": "todo-app_1.0.0_model",
+      "id": "task-manager_1.0.0_model",
       "type": "model",
-      "loc": "apps_templates/todo-app_1.0.0_model.json",
-      "description": "Simple Todo APP",
-      "name": "Todo App Colleciton Model ",
+      "loc": "apps_templates/task-manager_1.0.0_model.json",
+      "description": "Task Manager Collection Model",
+      "name": "Task Manager",
       "active": true,
       "version": "1.0.0"
     },
@@ -23,7 +23,7 @@
       "type": "model",
       "loc": "apps_templates/contact-manager_1.0.0_model.json",
       "description": "Contact Manager Collection Model",
-      "name": "Contact Manager Collection Model",
+      "name": "Contact Manager",
       "active": true,
       "version": "1.0.0"
     },
@@ -31,8 +31,8 @@
       "id": "waitlist_1.0.0_model",
       "type": "model",
       "loc": "apps_templates/waitlist_1.0.0_model.json",
-      "description": "Waitlist Collection Model",
-      "name": "Waitlist Collection Model",
+      "description": "Waitlist Manager Collection Model",
+      "name": "Waitlist Manager",
       "active": true,
       "version": "1.0.0"
     },
@@ -41,7 +41,7 @@
       "type": "model",
       "loc": "apps_templates/comments_1.0.0_model.json",
       "description": "Comments Collection Model",
-      "name": "Comments Collection Model",
+      "name": "Comments",
       "active": true,
       "version": "1.0.0"
     }

@@ -1,7 +1,7 @@
 {
-  "id": "todo-app_1.0.0_model",
-  "name": "Todo App",
-  "description": "TODO Model",
+  "id": "task-manager_1.0.0_model",
+  "name": "Task Manager",
+  "description": "Task Manager",
   "version": "1.0.0",
   "type": "model",
   "meta": {
