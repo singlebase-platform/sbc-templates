@@ -1,0 +1,178 @@
+{
+  "id": "contact-manager_1.0.0_model",
+  "name": "Contact Manager",
+  "description": "Contact Manager",
+  "version": "1.0.0",
+  "type": "model",
+  "meta": {
+    "creator": null,
+    "category": null,
+    "usecases": [],
+    "industries": [],
+    "previewImage": null,
+    "previewImages": []
+  },
+  "schemas": {
+    "json_schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Contact",
+      "type": "object",
+      "properties": {
+        "firstName": {
+          "type": "string",
+          "title": "First Name",
+          "description": "The first name of the contact."
+        },
+        "lastName": {
+          "type": "string",
+          "title": "Last Name",
+          "description": "The last name of the contact."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "title": "Email Address",
+          "description": "The email address of the contact."
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone Number",
+          "description": "The phone number of the contact."
+        },
+        "address": {
+          "type": "object",
+          "title": "Address",
+          "properties": {
+            "street": {
+              "type": "string",
+              "title": "Street",
+              "description": "The street address of the contact."
+            },
+            "city": {
+              "type": "string",
+              "title": "City",
+              "description": "The city of the contact."
+            },
+            "state": {
+              "type": "string",
+              "title": "State",
+              "description": "The state or region of the contact."
+            },
+            "postalCode": {
+              "type": "string",
+              "title": "Postal Code",
+              "description": "The postal code of the contact."
+            },
+            "country": {
+              "type": "string",
+              "title": "Country",
+              "description": "The country of the contact."
+            }
+          },
+          "required": [
+            "street",
+            "city",
+            "state",
+            "postalCode",
+            "country"
+          ]
+        },
+        "company": {
+          "type": "string",
+          "title": "Company",
+          "description": "The company the contact is associated with."
+        },
+        "jobTitle": {
+          "type": "string",
+          "title": "Job Title",
+          "description": "The job title of the contact."
+        },
+        "notes": {
+          "type": "string",
+          "title": "Notes",
+          "description": "Additional notes about the contact."
+        }
+      },
+      "required": [
+        "firstName",
+        "lastName",
+        "email"
+      ]
+    },
+    "view_schema": [
+      {
+        "field": "firstName",
+        "display": true,
+        "type": "text",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "First Name"
+      },
+      {
+        "field": "lastName",
+        "display": true,
+        "type": "text",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Last Name"
+      },
+      {
+        "field": "emaiil",
+        "display": true,
+        "type": "email",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Email"
+      },
+      {
+        "field": "phone",
+        "display": true,
+        "type": "phonenumber",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Phone Number"
+      },
+      {
+        "field": "company",
+        "display": true,
+        "type": "text",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Company"
+      },
+      {
+        "field": "jobTitle",
+        "display": true,
+        "type": "text",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Job Title"
+      },
+      {
+        "field": "notes",
+        "display": true,
+        "type": "text",
+        "options": {
+          "display_as": "longtext"
+        }
+      }
+    ],
+    "singleview_schema": {},
+    "editview_schema": {}
+  },
+  "schemas_settings": {
+    "json_schema": {},
+    "view_schema": {},
+    "singleview_schema": {},
+    "editview_schema": {}
+  },
+  "rules": [],
+  "$schema_version": "1.0.0",
+  "$creation_date": "2024-08-10T18:51:03.908Z"
+}

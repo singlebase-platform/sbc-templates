@@ -1,0 +1,128 @@
+{
+  "id": "comments_1.0.0_model",
+  "name": "Comments",
+  "description": "Comments",
+  "version": "1.0.0",
+  "type": "model",
+  "meta": {
+    "creator": null,
+    "category": null,
+    "usecases": [],
+    "industries": [],
+    "previewImage": null,
+    "previewImages": []
+  },
+  "schemas": {
+    "json_schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Comments Model",
+      "type": "object",
+      "properties": {
+        "content": {
+          "type": "string",
+          "title": "Content",
+          "description": "The text content of the comment."
+        },
+        "relatedPostId": {
+          "type": "string",
+          "title": "Related Post ID",
+          "description": "A reference to the ID of the post or item the comment is associated with."
+        },
+        "parentId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "title": "Parent Comment ID",
+          "description": "The ID of the parent comment if this is a reply. Null if it's a top-level comment."
+        },
+        "likes": {
+          "type": "integer",
+          "title": "Likes",
+          "description": "The number of likes the comment has received."
+        },
+        "views": {
+          "type": "integer",
+          "title": "Views",
+          "description": "The number of views the comment has received."
+        },
+        "tags": {
+          "type": "array",
+          "title": "Tags",
+          "description": "A list of tags associated with the comment.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "isPublic": {
+          "type": "boolean",
+          "title": "Public Visibility",
+          "description": "Indicates whether the comment is public or private."
+        }
+      },
+      "required": [
+        "content",
+        "relatedPostId"
+      ]
+    },
+    "view_schema": [
+      {
+        "field": "_userkey",
+        "display": true,
+        "type": "@_userkey",
+        "options": {
+          "display_as": "richinfo"
+        },
+        "alias": "Author"
+      },
+      {
+        "field": "_relatedpostidtitle",
+        "display": true,
+        "type": "@template",
+        "options": {
+          "display_as": "text",
+          "template": "{{ relatedPostId.title }}"
+        },
+        "alias": "Entry Title"
+      },
+      {
+        "field": "likes",
+        "display": true,
+        "type": "number",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Likes"
+      },
+      {
+        "field": "views",
+        "display": true,
+        "type": "number",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Views"
+      },
+      {
+        "field": "tags",
+        "display": true,
+        "type": "options",
+        "options": {
+          "display_as": "multioptions"
+        },
+        "alias": "Tags"
+      }
+    ],
+    "singleview_schema": {},
+    "editview_schema": {}
+  },
+  "schemas_settings": {
+    "json_schema": {},
+    "view_schema": {},
+    "singleview_schema": {},
+    "editview_schema": {}
+  },
+  "rules": [],
+  "$schema_version": "1.0.0",
+  "$date": "2024-08-10T20:31:39.407Z"
+}

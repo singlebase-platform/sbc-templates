@@ -1,0 +1,181 @@
+{
+  "id": "todo-app_1.0.0_model",
+  "name": "Todo App",
+  "description": "TODO Model",
+  "version": "1.0.0",
+  "type": "model",
+  "meta": {
+    "creator": null,
+    "category": null,
+    "usecases": [],
+    "industries": [],
+    "previewImage": null,
+    "previewImages": []
+  },
+  "schemas": {
+    "json_schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "ToDo",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Task Title",
+          "description": "A brief title or summary of the to-do item."
+        },
+        "description": {
+          "type": "string",
+          "title": "Task Description",
+          "description": "A detailed description of the to-do item."
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "in_progress",
+            "completed"
+          ],
+          "title": "Task Status",
+          "description": "The current status of the to-do item."
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Task Priority",
+          "description": "The priority level of the to-do item."
+        },
+        "dueDate": {
+          "type": "string",
+          "format": "date",
+          "title": "Due Date",
+          "description": "The due date for the to-do item."
+        },
+        "assignedTo": {
+          "type": "string",
+          "title": "Assigned User",
+          "description": "The user assigned to complete the to-do item."
+        },
+        "tags": {
+          "type": "array",
+          "title": "Tags",
+          "description": "A list of tags associated with the to-do item.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "relatedContact": {
+          "type": "string",
+          "title": "Related Contact",
+          "description": "A reference to a contact related to this to-do item."
+        },
+        "notes": {
+          "type": "string",
+          "title": "Additional Notes",
+          "description": "Additional notes or comments about the to-do item."
+        }
+      },
+      "required": [
+        "title",
+        "status",
+        "priority"
+      ]
+    },
+    "view_schema": [
+      {
+        "field": "title",
+        "display": true,
+        "type": "text",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Title"
+      },
+      {
+        "field": "status",
+        "display": true,
+        "type": "options",
+        "options": {
+          "display_as": "multioptions",
+          "values": [
+            {
+              "color": "blue-300",
+              "value": "pending",
+              "display": true
+            },
+            {
+              "color": "yellow-300",
+              "value": "in_progress",
+              "display": true
+            },
+            {
+              "color": "green-500",
+              "value": "completed",
+              "display": true
+            }
+          ]
+        },
+        "alias": "Status"
+      },
+      {
+        "field": "priority",
+        "display": true,
+        "type": "options",
+        "options": {
+          "display_as": "multioptions",
+          "values": [
+            {
+              "color": "cyan-500",
+              "value": "low",
+              "display": true
+            },
+            {
+              "color": "violet-300",
+              "value": "medium",
+              "display": true
+            },
+            {
+              "color": "red-500",
+              "value": "high",
+              "display": true
+            }
+          ]
+        },
+        "alias": "Priority"
+      },
+      {
+        "field": "dueDate",
+        "display": true,
+        "type": "datetime",
+        "options": {
+          "display_as": "datetime",
+          "format": "YYYY/MM/DD HH:mm:ss"
+        },
+        "alias": "Due Date"
+      },
+      {
+        "field": "assignedTo",
+        "display": true,
+        "type": "@_userkey",
+        "options": {
+          "display_as": "richuserinfo"
+        },
+        "alias": "Assigned To"
+      }
+    ],
+    "singleview_schema": {},
+    "editview_schema": {}
+  },
+  "schemas_settings": {
+    "json_schema": {},
+    "view_schema": {},
+    "singleview_schema": {},
+    "editview_schema": {}
+  },
+  "rules": [],
+  "$schema_version": "1.0.0",
+  "$date": "2024-08-10T19:24:39.005Z"
+}

@@ -1,0 +1,210 @@
+{
+  "id": "waitlist_1.0.0_model",
+  "name": "Waitlist",
+  "description": "",
+  "version": "1.0.0",
+  "type": "model",
+  "meta": {
+    "creator": null,
+    "category": null,
+    "usecases": [],
+    "industries": [],
+    "previewImage": null,
+    "previewImages": []
+  },
+  "schemas": {
+    "json_schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Waitlist Entry",
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Name",
+          "description": "The name of the individual or entity on the waitlist."
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "title": "Email Address",
+          "description": "The email address of the waitlisted individual or entity."
+        },
+        "phone": {
+          "type": "string",
+          "title": "Phone Number",
+          "description": "The phone number of the waitlisted individual or entity."
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending",
+            "contacted",
+            "confirmed",
+            "canceled"
+          ],
+          "title": "Status",
+          "description": "The current status of the waitlist entry."
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ],
+          "title": "Priority Level",
+          "description": "The priority level of the waitlist entry."
+        },
+        "dateContacted": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time",
+          "title": "Date Contacted",
+          "description": "The date and time when the individual or entity was contacted."
+        },
+        "notes": {
+          "type": "string",
+          "title": "Notes",
+          "description": "Additional notes about the waitlist entry."
+        },
+        "relatedContact": {
+          "type": "string",
+          "title": "Related Contact",
+          "description": "A reference to a related contact within the CRM."
+        },
+        "tags": {
+          "type": "array",
+          "title": "Tags",
+          "description": "A list of tags associated with the waitlist entry.",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "name",
+        "email",
+        "status",
+        "dateAdded"
+      ]
+    },
+    "view_schema": [
+      {
+        "field": "name",
+        "display": true,
+        "type": "text",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Name"
+      },
+      {
+        "field": "email",
+        "display": true,
+        "type": "email",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Email"
+      },
+      {
+        "field": "phone",
+        "display": true,
+        "type": "text",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Phone Number"
+      },
+      {
+        "field": "status",
+        "display": true,
+        "type": "options",
+        "options": {
+          "display_as": "singleoption",
+          "values": [
+            {
+              "color": "emerald-500",
+              "value": "pending",
+              "display": true
+            },
+            {
+              "color": "violet-300",
+              "value": "contacted",
+              "display": true
+            },
+            {
+              "color": "emerald-500",
+              "value": "confirmed",
+              "display": true
+            },
+            {
+              "color": "red-300",
+              "value": "canceled",
+              "display": true
+            }
+          ]
+        },
+        "alias": "Status"
+      },
+      {
+        "field": "priority",
+        "display": true,
+        "type": "options",
+        "options": {
+          "display_as": "singleoption",
+          "values": [
+            {
+              "color": "violet-300",
+              "value": "low",
+              "display": true
+            },
+            {
+              "color": "green-300",
+              "value": "medium",
+              "display": true
+            },
+            {
+              "color": "purple-500",
+              "value": "high",
+              "display": true
+            }
+          ]
+        },
+        "alias": "Priority"
+      },
+      {
+        "field": "dateContacted",
+        "display": true,
+        "type": "datetime",
+        "options": {
+          "display_as": "date",
+          "format": "MM/DD/YYYY"
+        },
+        "alias": "Date Contacted"
+      },
+      {
+        "field": "tags",
+        "display": true,
+        "type": "options",
+        "options": {
+          "display_as": "singleoption"
+        },
+        "alias": "Tags"
+      }
+    ],
+    "singleview_schema": {},
+    "editview_schema": {}
+  },
+  "schemas_settings": {
+    "json_schema": {},
+    "view_schema": {},
+    "singleview_schema": {},
+    "editview_schema": {}
+  },
+  "rules": [],
+  "$schema_version": "1.0.0",
+  "$date": "2024-08-10T19:32:58.047Z"
+}

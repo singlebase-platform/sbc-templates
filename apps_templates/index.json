@@ -1,0 +1,49 @@
+{
+  "templates":[
+    {
+      "id": "micro-blog-post_1.0.0_model",
+      "type": "model",
+      "loc": "apps_templates/micro-blog-post_1.0.0_model.json",
+      "name": "Micro Blog Post Collection Model",
+      "description": "Micro Blog Post Collection Model",
+      "active": true,
+      "version": "1.0.0"
+    },
+    {
+      "id": "todo-app_1.0.0_model",
+      "type": "model",
+      "loc": "apps_templates/todo-app_1.0.0_model.json",
+      "description": "Simple Todo APP",
+      "name": "Todo App Colleciton Model ",
+      "active": true,
+      "version": "1.0.0"
+    },
+    {
+      "id": "contact-manager_1.0.0_model",
+      "type": "model",
+      "loc": "apps_templates/contact-manager_1.0.0_model.json",
+      "description": "Contact Manager Collection Model",
+      "name": "Contact Manager Collection Model",
+      "active": true,
+      "version": "1.0.0"
+    },
+    {
+      "id": "waitlist_1.0.0_model",
+      "type": "model",
+      "loc": "apps_templates/waitlist_1.0.0_model.json",
+      "description": "Waitlist Collection Model",
+      "name": "Waitlist Collection Model",
+      "active": true,
+      "version": "1.0.0"
+    },
+    {
+      "id": "comments_1.0.0_model",
+      "type": "model",
+      "loc": "apps_templates/comments_1.0.0_model.json",
+      "description": "Comments Collection Model",
+      "name": "Comments Collection Model",
+      "active": true,
+      "version": "1.0.0"
+    }
+  ]
+}

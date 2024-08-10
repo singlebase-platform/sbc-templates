@@ -1,0 +1,123 @@
+{
+  "id": "micro-blog-post_1.0.0_model",
+  "name": "Micro Blog Post",
+  "description": "",
+  "version": "1.0.0",
+  "type": "model",
+  "meta": {
+    "creator": null,
+    "category": null,
+    "usecases": [],
+    "industries": [],
+    "previewImage": null,
+    "previewImages": []
+  },
+  "schemas": {
+    "json_schema": {
+      "$schema": "http://json-schema.org/draft-07/schema#",
+      "title": "Microblog Post",
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Title",
+          "description": "The title of the microblog post."
+        },
+        "content": {
+          "type": "string",
+          "title": "Content",
+          "description": "The text content of the microblog post."
+        },
+        "likes": {
+          "type": "integer",
+          "title": "Likes",
+          "description": "The number of likes the post has received."
+        },
+        "views": {
+          "type": "integer",
+          "title": "Views",
+          "description": "The number of  views the post has received."
+        },
+        "tags": {
+          "type": "array",
+          "title": "Tags",
+          "description": "A list of tags associated with the microblog post.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "relatedContact": {
+          "type": "string",
+          "title": "Related Contact",
+          "description": "A reference to a contact related to this microblog post."
+        },
+        "isPublic": {
+          "type": "boolean",
+          "title": "Public Visibility",
+          "description": "Indicates whether the post is public or private."
+        }
+      },
+      "required": [
+        "content"
+      ]
+    },
+    "view_schema": [
+      {
+        "field": "_userkey",
+        "display": true,
+        "type": "@_userkey",
+        "options": {
+          "display_as": "richinfo"
+        },
+        "alias": "Author"
+      },
+      {
+        "field": "title",
+        "display": true,
+        "type": "text",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Title"
+      },
+      {
+        "field": "likes",
+        "display": true,
+        "type": "number",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Likes"
+      },
+      {
+        "field": "views",
+        "display": true,
+        "type": "number",
+        "options": {
+          "display_as": "text"
+        },
+        "alias": "Views"
+      },
+      {
+        "field": "tags",
+        "display": true,
+        "type": "options",
+        "options": {
+          "display_as": "singleoption"
+        },
+        "alias": "Tags"
+      }
+    ],
+    "singleview_schema": {},
+    "editview_schema": {}
+  },
+  "schemas_settings": {
+    "json_schema": {},
+    "view_schema": {},
+    "singleview_schema": {},
+    "editview_schema": {}
+  },
+  "rules": [],
+  "$schema_version": "1.0.0",
+  "$date": "2024-08-10T19:42:20.490Z"
+}
