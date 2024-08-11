@@ -14,7 +14,6 @@
   },
   "schemas": {
     "json_schema": {
-      "$schema": "http://json-schema.org/draft-07/schema#",
       "title": "ToDo",
       "type": "object",
       "properties": {
@@ -166,16 +165,16 @@
         "alias": "Assigned To"
       }
     ],
-    "singleview_schema": {},
-    "editview_schema": {}
+    "single_view_schema": {},
+    "single_edit_schema": {}
   },
   "schemas_settings": {
     "json_schema": {},
     "view_schema": {},
-    "singleview_schema": {},
-    "editview_schema": {}
+    "single_view_schema": {},
+    "single_edit_schema": {}
   },
   "rules": [],
-  "$schema_version": "1.0.0",
+  "$version": "1.0.0",
   "$date": "2024-08-10T19:24:39.005Z"
 }

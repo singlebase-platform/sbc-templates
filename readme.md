@@ -29,17 +29,17 @@
       json_schema: {},
       view_schema: {},
       singleview_schema: {},
-      editview_schema: {},
+      singleedit_schema: {},
     },
     schemas_settings: {
       json_schema: {},
       view_schema: {},
       singleview_schema: {},
-      editview_schema: {},
+      singleedit_schema: {},
     },
     rules: [],
-    $schema_version: "1.0.0",
-    $date
+    $_version: "1.0.0",
+    $_date: Date
     
 }
 ```
@@ -57,19 +57,19 @@ schemas:object - contains all the schemas
   - json_schema:object - JSON Schema
   - view_schema:object - Schema for the Data View
   - singleview_schema:object - Schema to show a single element view
-  - editview_schema:object - Schema to edit single element view
+  - singleedit_schema:object - Schema to edit single element view
 
 schemas_settings:object - settings for all schemas
   - json_schema:object - JSON Schema
   - view_schema:object - Schema for the Data View
   - singleview_schema:object - Schema to show a single element view
-  - editview_schema:object - Schema to edit single element view
+  - singleedit_schema:object - Schema to edit single element view
 
 rules:[]
 validations:TBD
 
-$schema_version:str - the schema version of the system
-$date:date - 
+$_version:str - the schema version of the system
+$_date:Date - the date the schema was created 
 ```
 
 ---

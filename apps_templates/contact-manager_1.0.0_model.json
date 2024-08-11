@@ -14,7 +14,6 @@
   },
   "schemas": {
     "json_schema": {
-      "$schema": "http://json-schema.org/draft-07/schema#",
       "title": "Contact",
       "type": "object",
       "properties": {
@@ -163,16 +162,16 @@
         }
       }
     ],
-    "singleview_schema": {},
-    "editview_schema": {}
+    "single_view_schema": {},
+    "single_edit_schema": {}
   },
   "schemas_settings": {
     "json_schema": {},
     "view_schema": {},
-    "singleview_schema": {},
-    "editview_schema": {}
+    "single_view_schema": {},
+    "single_edit_schema": {}
   },
   "rules": [],
-  "$schema_version": "1.0.0",
-  "$creation_date": "2024-08-10T18:51:03.908Z"
+  "$version": "1.0.0",
+  "$date": "2024-08-10T18:51:03.908Z"
 }
